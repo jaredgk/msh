@@ -29,7 +29,7 @@ LEFT_VCF=$TAG".vcf"
 RIGHT_VCF=$TAG"_reversed.vcf"
 SSL=$FTAG"_left_results.txt.gz"
 SSR=$FTAG"_right_results.txt.gz"
-SSE=$FTAG"_peakmap_estimates.txt"
+SSE=$FTAG"_estimates.txt"
 
 #If this is done outside of script, make sure to unzip file first
 #then use 'tac (vcf)', otherwise memory issues may occur with piping
