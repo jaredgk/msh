@@ -134,6 +134,8 @@ def getGenMap(f,idx=0,squish=False):
     l1 = []
     l2 = []
     for line in f:
+        if line[0] not in [0,1,2,3,4,5,6,7,8,9]:
+            continue
         a,b = parseGenLine(line,idx)
         #if b != 0:
         if not squish or (len(l2) > 0 and l2[-1] != b):
